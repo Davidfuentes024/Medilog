@@ -6,19 +6,19 @@ import java.rmi.RemoteException;
 import com.example.EstructurasDeDatos.ListaSimple;
 import com.example.Model.Paciente;
 
-public interface GestionPacientesInterface extends Remote {
+public interface GestionPacientesInterface {
 
-    void crearPaciente(Paciente paciente) throws RemoteException;
+    void crearPaciente(Paciente paciente);
 
-    Paciente obtenerPaciente(String nombrePaciente) throws RemoteException;
+    Paciente obtenerPaciente(String nombrePaciente);
 
-    ListaSimple<Paciente> obtenerTodosPacientes() throws RemoteException;
+    ListaSimple<Paciente> obtenerTodosPacientes();
 
-    void actualizarPaciente(Paciente paciente) throws RemoteException;
+    void actualizarPaciente(Paciente paciente);
 
-    void eliminarPaciente(Long nombrePaciente) throws RemoteException;
+    void eliminarPaciente(Long nombrePaciente);
 
-    void guardarPacientesEnJSON(String rutaArchivo) throws RemoteException;
+    void guardarPacientesEnJSON(String rutaArchivo);
 
-    void cargarPacientesDesdeJSON(String rutaArchivo) throws RemoteException;
+    void cargarPacientesDesdeJSON(String rutaArchivo);
 }

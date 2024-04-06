@@ -9,15 +9,13 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.lang.reflect.Type;
-import java.rmi.RemoteException;
-import java.rmi.server.UnicastRemoteObject;
 import java.util.List;
 
-public class GestionUsuariosImp extends UnicastRemoteObject implements GestionUsuariosInterface {
+public class GestionUsuariosImp implements GestionUsuariosInterface {
     private ListaSimple<Usuario> listaUsuarios;
     private Gson gson;
 
-    public GestionUsuariosImp() throws RemoteException {
+    public GestionUsuariosImp() {
         this.listaUsuarios = new ListaSimple<>();
         this.gson = new Gson();
     }
@@ -25,7 +23,7 @@ public class GestionUsuariosImp extends UnicastRemoteObject implements GestionUs
     @Override
     public void guardarUsuariosEnJSON(String rutaArchivo) {
         try (FileWriter writer = new FileWriter(rutaArchivo)) {
-            gson.toJson(listaUsuarios, writer);
+            gson.toJson(listaUsuarios.toArray(), writer);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -36,7 +34,15 @@ public class GestionUsuariosImp extends UnicastRemoteObject implements GestionUs
         try (FileReader reader = new FileReader(rutaArchivo)) {
             Type tipoListaUsuarios = new TypeToken<List<Usuario>>() {
             }.getType();
-            listaUsuarios = gson.fromJson(reader, tipoListaUsuarios);
+            List<Usuario> usuarios = gson.fromJson(reader, tipoListaUsuarios);
+
+            // Limpiar la lista actual antes de cargar los usuarios
+            listaUsuarios = new ListaSimple<>();
+
+            // Agregar los usuarios a la lista
+            for (Usuario usuario : usuarios) {
+                listaUsuarios.append(usuario);
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -44,14 +50,19 @@ public class GestionUsuariosImp extends UnicastRemoteObject implements GestionUs
 
     @Override
     public void crearUsuario(Usuario usuario) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'crearUsuario'");
+        listaUsuarios.append(usuario);
+        guardarUsuariosEnJSON("usuarios.json");
     }
 
-    @Override
     public Usuario obtenerUsuario(String nombreUsuario) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'obtenerUsuario'");
+        int tamaño = listaUsuarios.size();
+        for (int i = 0; i < tamaño; i++) {
+            Usuario usuario = listaUsuarios.getElementAt(i);
+            if (usuario.getUsername().equals(nombreUsuario)) {
+                return usuario;
+            }
+        }
+        return null;
     }
 
     @Override

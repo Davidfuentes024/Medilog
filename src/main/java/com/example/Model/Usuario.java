@@ -1,7 +1,6 @@
 package com.example.Model;
 
 public class Usuario {
-    // Atributos: Nombre de usuario, contraseña, rol.
 
     private String username;
     private String password;
