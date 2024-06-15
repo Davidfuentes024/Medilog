@@ -1,0 +1,32 @@
+[
+  {
+    "username": "admin",
+    "password": "admin123",
+    "rol": 1
+  },
+  {
+    "username": "autorizador",
+    "password": "autorizador123",
+    "rol": 2
+  },
+  {
+    "username": "creador_citas",
+    "password": "citas123",
+    "rol": 3
+  },
+  {
+    "username": "creador_ordenes",
+    "password": "ordenes123",
+    "rol": 4
+  },
+  {
+    "username": "registro_paciente",
+    "password": "paciente123",
+    "rol": 5
+  },
+  {
+    "username": "taquilla_pago",
+    "password": "taquilla123",
+    "rol": 6
+  }
+]

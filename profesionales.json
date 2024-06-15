@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "nombre": "Juan Perez",
+    "especialidad": "Medicina Interna"
+  },
+  {
+    "id": 2,
+    "nombre": "Pedro Gomez",
+    "especialidad": "Medicina Familiar"
+  },
+  {
+    "id": 3,
+    "nombre": "Maria Rodriguez",
+    "especialidad": "Pediatría"
+  },
+  {
+    "id": 4,
+    "nombre": "Ana Martinez",
+    "especialidad": "Medicina General"
+  },
+  {
+    "id": 5,
+    "nombre": "Juan Perez",
+    "especialidad": "Patologia Clinica"
+  },
+  {
+    "id": 6,
+    "nombre": "Pedro Gomez",
+    "especialidad": "Bioquimica Clinica"
+  },
+  {
+    "id": 7,
+    "nombre": "Maria Rodriguez",
+    "especialidad": "Radiologia"
+  },
+  {
+    "id": 8,
+    "nombre": "Ana Martinez",
+    "especialidad": "Radioterapia"
+  },
+  {
+    "id": 9,
+    "nombre": "Juan Perez",
+    "especialidad": "Medicina Nuclear"
+  },
+  {
+    "id": 10,
+    "nombre": "Pedro Gomez",
+    "especialidad": "Medicina Interna"
+  },
+  {
+    "id": 11,
+    "nombre": "Maria Rodriguez",
+    "especialidad": "Medicina Familiar"
+  },
+  {
+    "id": 12,
+    "nombre": "Ana Martinez",
+    "especialidad": "Pediatría"
+  },
+  {
+    "id": 13,
+    "nombre": "Juan Perez",
+    "especialidad": "Medicina General"
+  },
+  {
+    "id": 14,
+    "nombre": "Pedro Gomez",
+    "especialidad": "Patologia Clinica"
+  },
+  {
+    "id": 15,
+    "nombre": "Maria Rodriguez",
+    "especialidad": "Bioquimica Clinica"
+  },
+  {
+    "id": 16,
+    "nombre": "Ana Martinez",
+    "especialidad": "Radiologia"
+  },
+  {
+    "id": 17,
+    "nombre": "Juan Perez",
+    "especialidad": "Radioterapia"
+  },
+  {
+    "id": 18,
+    "nombre": "Pedro Gomez",
+    "especialidad": "Medicina Nuclear"
+  },
+  {
+    "id": 19,
+    "nombre": "Juan Perez",
+    "especialidad": "Neumologia"
+  },
+  {
+    "id": 20,
+    "nombre": "Pedro Gomez",
+    "especialidad": "Cardiologia"
+  },
+  {
+    "id": 21,
+    "nombre": "Maria Rodriguez",
+    "especialidad": "Medicina Deportiva"
+  },
+  {
+    "id": 22,
+    "nombre": "Ana Martinez",
+    "especialidad": "Gastroenterologia"
+  },
+  {
+    "id": 23,
+    "nombre": "Juan Perez",
+    "especialidad": "Otorrinolaringologia"
+  },
+  {
+    "id": 24,
+    "nombre": "Pedro Gomez",
+    "especialidad": "Urologia"
+  },
+  {
+    "id": 25,
+    "nombre": "Maria Rodriguez",
+    "especialidad": "Genetica Medica"
+  },
+  {
+    "id": 26,
+    "nombre": "Ana Martinez",
+    "especialidad": "Oncologia"
+  },
+  {
+    "id": 27,
+    "nombre": "Juan Perez",
+    "especialidad": "Neurologia"
+  },
+  {
+    "id": 28,
+    "nombre": "Pedro Gomez",
+    "especialidad": "Psiquiatria"
+  },
+  {
+    "id": 29,
+    "nombre": "Maria Rodriguez",
+    "especialidad": "Obstetricia y Ginecologia"
+  },
+  {
+    "id": 30,
+    "nombre": "Ana Martinez",
+    "especialidad": "Cardiologia"
+  }
+]

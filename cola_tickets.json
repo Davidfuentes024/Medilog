@@ -1,0 +1,50 @@
+{
+  "Exámenes de laboratorio": [],
+  "Pruebas de función": [
+    {
+      "identificador": "PF-4",
+      "motivoCita": "Pruebas de función",
+      "turno": 4,
+      "estadoPago": false,
+      "valor": 60.0
+    }
+  ],
+  "Imágenes diagnósticas": [
+    {
+      "identificador": "ID-3",
+      "motivoCita": "Imágenes diagnósticas",
+      "turno": 3,
+      "estadoPago": false,
+      "valor": 70.0
+    }
+  ],
+  "Exámenes genéticos": [
+    {
+      "identificador": "EG-6",
+      "motivoCita": "Exámenes genéticos",
+      "turno": 6,
+      "estadoPago": false,
+      "valor": 60.0
+    }
+  ],
+  "Examen físico": [],
+  "Exámenes endoscópicos": [
+    {
+      "identificador": "EE-5",
+      "motivoCita": "Exámenes endoscópicos",
+      "turno": 5,
+      "estadoPago": false,
+      "valor": 65.0
+    }
+  ],
+  "Exámenes de diagnóstico por ultrasonido": [],
+  "Exámenes de imagenología funcional": [
+    {
+      "identificador": "EIF-7",
+      "motivoCita": "Exámenes de imagenología funcional",
+      "turno": 7,
+      "estadoPago": false,
+      "valor": 70.0
+    }
+  ]
+}
